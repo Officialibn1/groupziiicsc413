@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --bg-color: rgb(197,228,231);
+    --text-color: rgb(39,194,174);
+    --border-color: rgb(0,71,74);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    padding: 0 10%;
+}
+
+body {
+    width: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    padding: 20px 10%;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(197, 228, 231, 0.881);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: var(--border-color);
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.logo span {
+    color: var(--border-color);
+    font-size: 35px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1.5em;
+}
+
+nav ul li a {
+    color: var(--border-color);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    margin: 0 auto;
+    width: 0;
+    background: var(--border-color);
+    transition: width 300ms ease;
+    z-index: 3;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+header {
+    margin-top: 85px;
+    height: 350px;
+    background-image: url(/img/cyberlawbg.jpg);
+    background-position: center center;
+    background-size: cover cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+}
+
+
+header h1 {
+    font-size: 80px;
+    font-weight: 400;
+    color: var(--bg-color);
+    text-align: center;
+}
+
+.mindmap {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mindmap h1 {
+    margin: 40px 0;
+    font-size: 35px;
+    color: var(--border-color);
+    font-weight: 500;
+}
+
+.mindmap img {
+    width: 50%;
+    height: 500px;
+}
+
+.documents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.documents h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--border-color);
+    margin: 40px 0;
+}
+
+.documentWrapper {
+    width: 100%;
+    display: flex;
+    gap: 2em;
+}
+
+.document {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.document h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--border-color);
+    margin: 20px 0;
+}
+
+.document img {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.document a {
+    padding: 10px 15px;
+    border: 2px solid var(--border-color);
+    text-decoration: none;
+    color: var(--border-color);
+}
