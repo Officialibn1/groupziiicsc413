@@ -19,6 +19,29 @@
 
     <!-- Navigation -->
     <nav>
+
+        <div class="mobileNavLinksWrapper">
+            <span class="material-icons-outlined open" id="open">
+                menu
+            </span>
+            
+            
+            <div class="mobileNavLinks" id="mobileNavLinks">
+                <span class="material-icons-outlined close" id="close">
+                    close
+                </span>
+
+                <ul>
+                    <li><a id="link" href="#">HOME</a></li>
+                    <li><a id="link2" href="#mindmap">MIND MAP</a></li>
+                    <li><a id="link3" href="#documents">DOCUMENTS</a></li>
+                    <li><a id="link4" href="#members">MEMBERS</a></li>
+                    <li><a id="link5" href="#about">ABOUT</a></li>
+                </ul>
+            </div>
+        
+        </div>
+
         <div class="logo">
             
             <h1>
@@ -33,10 +56,10 @@
         <div class="navLinks">
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">MIND MAP</a></li>
-                <li><a href="#">DOCUMENTS</a></li>
-                <li><a href="#">MEMBERS</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="#mindmap">MIND MAP</a></li>
+                <li><a href="#documents">DOCUMENTS</a></li>
+                <li><a href="#members">MEMBERS</a></li>
+                <li><a href="#about">ABOUT</a></li>
             </ul>
         </div>
     </nav>
@@ -47,8 +70,20 @@
             </h1>
     </header>
 
-    <!-- Mind map section -->
     <section class="container">
+        <div class="welcome">
+            <p class="lead">
+                Welcome to our webpage! We are a team of four passionate students who have come together to embark on an exciting project that delves into the fascinating realm of cyber law. Our mission is to provide valuable insights and knowledge about the intricacies of cyber law, offering a comprehensive understanding of this important field.
+            </p>
+
+            <p class="lead">
+                In this digital era, where technology pervades every aspect of our lives, understanding cyber law is crucial. Our project is driven by a shared desire to explore the legal framework that governs the digital landscape, encompassing areas such as online privacy, data protection, intellectual property rights, electronic commerce, and cybercrime.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mind map section -->
+    <section class="container" id="mindmap">
         <div class="mindmap">
             <h1>
                 OUR MIND-MAP FOR THIS PROJECT
@@ -58,8 +93,21 @@
         </div>
     </section>
 
-    <!-- Documents Section -->
+    <!-- Introduction Section -->
     <section class="container">
+        <div class="introduction">
+            <h1>
+                WHAT IS CYBER LAW
+            </h1>
+
+            <P class="lead">
+                Cyber law, also known as Internet law or information technology law, refers to the legal framework that governs activities in the digital realm. It encompasses a wide range of legal issues related to the use of computers, the internet, and technology. Cyber law addresses various aspects such as online privacy, data protection, intellectual property rights, electronic transactions, cybercrime, and the legal responsibilities and liabilities of individuals and organizations in cyberspace.
+            </P>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section class="container" id="documents">
         <div class="documents">
             <h1>
                 TERM PAPER & SLIDE
@@ -90,7 +138,7 @@
     </section>
 
     <!-- Members Section -->
-    <section class="container">
+    <section class="container" id="members">
         <div class="members">
             <h1>
                 MEMBERS
@@ -116,7 +164,7 @@
 
                     <div class="desc">
                         <h3>
-                            ABDULKADIR MAHMUD 
+                            Mustapha dauda yabata  
                         </h3>
 
                         <span>
@@ -130,7 +178,7 @@
 
                     <div class="desc">
                         <h3>
-                            ABDULKADIR MAHMUD 
+                            SAIFULLAHI USMAN
                         </h3>
 
                         <span>
@@ -144,7 +192,7 @@
 
                     <div class="desc">
                         <h3>
-                            ABDULKADIR MAHMUD 
+                            BUHARI ABDULLAHI WUSHISHI 
                         </h3>
 
                         <span>
@@ -158,16 +206,30 @@
     </section>
     
     <!-- About Section -->
-    <section class="container">
+    <section class="container" id="about">
         <div class="about">
             <h1>
                 ABOUT THIS PROJECT
             </h1>
 
             <p class="lead">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quibusdam repellat minus voluptatem. Vitae voluptate exercitationem sit! Distinctio, temporibus beatae aliquam facere rem earum corrupti commodi sit voluptatem, rerum placeat. Possimus praesentium reprehenderit labore iste aliquam! Sit voluptates odio soluta dolores ducimus blanditiis voluptate suscipit quos exercitationem, laudantium voluptatibus ipsa ratione nam, aliquid quidem excepturi animi laborum placeat maxime. Eligendi dignissimos rem porro quod neque fugiat pariatur impedit! Nobis aperiam veniam totam natus quas nesciunt minima, cum excepturi atque ipsa dolores odio ut sit ea illum maiores porro, officia labore error vero dolore voluptate. Eligendi repellendus doloremque pariatur eos voluptatum.
+                As passionate learners ourselves, we continuously strive to stay up-to-date with the latest developments in cyber law. We are committed to providing accurate and reliable information, drawing from reputable sources and credible legal authorities. By staying informed on emerging trends and legal precedents, we aim to offer you the most relevant and timely content in the field of cyber law.
+            </p>
+            <br>
+
+            <p class="lead">
+                Thank you for visiting our webpage, and we hope you find it informative and inspiring.
             </p>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <span>
+            &COPY; GROUP Z iii OF CSC413, 2018-2023 COMPUTER SCIENCE, IBBUL.
+        </span>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
